@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <OutputPath>..\bin\netcore31</OutputPath>
+    <TargetName>MVVMNext.Extras</TargetName>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator" Version="2.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\MVVMNext.Core.netcore31.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Core\Helpers\DesignerPlatformLibrary.cs">
+      <Link>Helpers\DesignerPlatformLibrary.cs</Link>
+    </Compile>
+  </ItemGroup>
+
+</Project>
