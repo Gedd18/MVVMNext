@@ -1,11 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-
-  <PropertyGroup>
-    <TargetFramework>netcoreapp5.0</TargetFramework>
-    <UseWPF>true</UseWPF>
-    <OutputPath>..\bin\net50preview4</OutputPath>
-    <TargetName>MVVMNext.Core</TargetName>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netcoreapp5.0</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<OutputPath>..\bin\net50preview4</OutputPath>
+		<TargetName>MVVMNext.Core</TargetName>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="CommonServiceLocator" Version="2.0.5" />
+	</ItemGroup>
 
 </Project>
