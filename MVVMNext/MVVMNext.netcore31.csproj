@@ -4,8 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
     <OutputPath>..\bin\netcore31</OutputPath>
-    <TargetName>MVVMNext.Core</TargetName>
+    <TargetName>MVVMNext</TargetName>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator" Version="2.0.5" />
+  </ItemGroup>
 
 </Project>
