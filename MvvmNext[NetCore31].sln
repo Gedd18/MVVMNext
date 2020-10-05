@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVMNext.Core.netcore31", "Core\MVVMNext.Core.netcore31.csproj", "{F67D4386-58DB-4D58-A0AA-12EEB9E0CA26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVMNext.netcore31", "MVVMNext\MVVMNext.netcore31.csproj", "{F67D4386-58DB-4D58-A0AA-12EEB9E0CA26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
