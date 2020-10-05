@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>netcoreapp5.0</TargetFramework>
+		<TargetFramework>net5.0</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<OutputPath>..\bin\net50preview4</OutputPath>
-		<TargetName>MVVMNext.Core</TargetName>
+		<TargetName>MVVMNext</TargetName>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	</PropertyGroup>
 	<ItemGroup>
