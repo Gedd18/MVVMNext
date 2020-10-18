@@ -1,2 +1,2 @@
 # MVVM Next
-Complete rewrite of MVVM Light to support recent Net platforms.
+MVVM Light rewrite to support recent Net platforms.
