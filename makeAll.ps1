@@ -32,3 +32,5 @@ $console.foregroundcolor = "green"
 "MVVMNext for Net50preview4"
 $console.foregroundcolor = $oldColor
 dotnet pack MvvmNext[Net50rc1].sln --output ./packages/Net50 --verbosity quiet
+
+dotnet nuget push "packages/Net48/MVVMNext.1.0.0.nupkg" --source "github"

@@ -5,6 +5,12 @@
 		<OutputPath>..\bin\net50rc1</OutputPath>
 		<TargetName>MVVMNext</TargetName>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<PackageId>MVVMNext</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Gedd18</Authors>
+		<Company>GitHub</Company>
+		<PackageDescription>MVVMNext</PackageDescription>
+		<RepositoryUrl>https://github.com/gedd18/MVVMNext</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
