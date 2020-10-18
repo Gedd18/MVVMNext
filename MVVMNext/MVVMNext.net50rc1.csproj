@@ -2,10 +2,11 @@
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
 		<UseWPF>true</UseWPF>
-		<OutputPath>..\bin\net50preview4</OutputPath>
+		<OutputPath>..\bin\net50rc1</OutputPath>
 		<TargetName>MVVMNext</TargetName>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	</PropertyGroup>
+
 	<ItemGroup>
 		<PackageReference Include="CommonServiceLocator" Version="2.0.5" />
 	</ItemGroup>

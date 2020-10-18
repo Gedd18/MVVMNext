@@ -15,7 +15,7 @@ dotnet build MvvmNext[NetCore31].sln --verbosity quiet
 $console.foregroundcolor = "green"
 "Build MvvmNext[Net50preview4]"
 $console.foregroundcolor = $oldColor
-dotnet build MvvmNext[Net50preview4].sln --verbosity quiet
+dotnet build MvvmNext[Net50rc1].sln --verbosity quiet
 
 $console.foregroundcolor = "green"
 "Create package"
@@ -31,4 +31,4 @@ dotnet pack MvvmNext[NetCore31].sln --output ./packages/NetCore31 --verbosity qu
 $console.foregroundcolor = "green"
 "MVVMNext for Net50preview4"
 $console.foregroundcolor = $oldColor
-dotnet pack MvvmNext[Net50preview4].sln --output ./packages/Net50 --verbosity quiet
+dotnet pack MvvmNext[Net50rc1].sln --output ./packages/Net50 --verbosity quiet
