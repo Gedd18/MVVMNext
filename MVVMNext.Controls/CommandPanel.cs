@@ -38,10 +38,10 @@ namespace MVVMNext.Controls
 
         public CommandPanel()
         { 
-            this.MouseDown += ActionControl_MouseDown;
+            this.MouseUp += ActionControl_MouseUp;
         }
 
-        private void ActionControl_MouseDown(object sender, MouseButtonEventArgs e)
+        private void ActionControl_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Command?.Execute(Parameter);
         }

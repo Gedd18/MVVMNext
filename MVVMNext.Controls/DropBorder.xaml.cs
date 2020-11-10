@@ -17,12 +17,17 @@ namespace MVVMNext.Controls
         }
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (_parentWindow != null) _parentWindow.DragMove();
+            
         }
 
         private void Border_Loaded(object sender, RoutedEventArgs e)
         {
             _parentWindow = Window.GetWindow(this);
+        }
+
+        private void Border_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (_parentWindow != null && e.LeftButton == MouseButtonState.Pressed) _parentWindow.DragMove();
         }
     }
 }
