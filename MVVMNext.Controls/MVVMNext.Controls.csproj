@@ -14,6 +14,7 @@
 	<ItemGroup>
 	  <None Remove="svg\close-line.svg" />
 	  <None Remove="svg\math-minus.svg" />
+	  <None Remove="svg\minimize.svg" />
 	  <None Remove="svg\move-thin.svg" />
 	  <None Remove="svg\move.svg" />
 	  <None Remove="svg\restore-window-line.svg" />
@@ -28,6 +29,7 @@
 	<ItemGroup>
 	  <Resource Include="svg\close-line.svg" />
 	  <Resource Include="svg\math-minus.svg" />
+	  <Resource Include="svg\minimize.svg" />
 	  <Resource Include="svg\move-thin.svg" />
 	  <Resource Include="svg\move.svg" />
 	  <Resource Include="svg\restore-window-line.svg" />
