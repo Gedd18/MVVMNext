@@ -3,34 +3,14 @@ $console = $host.ui.rawui
 
 $oldColor = $console.foregroundcolor
 $console.foregroundcolor = "green"
-"Build MvvmNext[Net48]"
+"Build MvvmNext"
 $console.foregroundcolor = $oldColor
-dotnet build MvvmNext[Net48].sln --verbosity quiet
-
-$console.foregroundcolor = "green"
-"Build MvvmNext[NetCore31]"
-$console.foregroundcolor = $oldColor
-dotnet build MvvmNext[NetCore31].sln --verbosity quiet
-
-$console.foregroundcolor = "green"
-"Build MvvmNext[Net50preview4]"
-$console.foregroundcolor = $oldColor
-dotnet build MvvmNext[Net50rc1].sln --verbosity quiet
-
-$console.foregroundcolor = "green"
-"Create package"
-"MVVMNext for Net48"
-$console.foregroundcolor = $oldColor
-dotnet pack MvvmNext[Net48].sln --output ./packages/Net48 --verbosity quiet
-
-$console.foregroundcolor = "green"
-"MVVMNext for NetCore31"
-$console.foregroundcolor = $oldColor
-dotnet pack MvvmNext[NetCore31].sln --output ./packages/NetCore31 --verbosity quiet
+dotnet build MvvmNext.sln --verbosity quiet
 
 $console.foregroundcolor = "green"
 "MVVMNext for Net50preview4"
 $console.foregroundcolor = $oldColor
-dotnet pack MvvmNext[Net50rc1].sln --output ./packages/Net50 --verbosity quiet
+dotnet pack MvvmNext.sln --output ./packages/Net50 --verbosity quiet
 
-dotnet nuget push "packages/Net48/MVVMNext.1.0.0.nupkg" --source "github"
+#dotnet nuget delete MVVMNext 1.0.0 --source github
+dotnet nuget push "packages/Net50/MVVMNext.1.0.0.nupkg" --source "github"

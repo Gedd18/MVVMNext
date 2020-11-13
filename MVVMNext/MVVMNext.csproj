@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net5.0</TargetFramework>
+		<TargetFramework>net5.0-windows</TargetFramework>
 		<UseWPF>true</UseWPF>
-		<OutputPath>..\bin\net50rc1</OutputPath>
+		<OutputPath>..\bin</OutputPath>
 		<TargetName>MVVMNext</TargetName>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<PackageId>MVVMNext</PackageId>
