@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:MVNCtrls="clr-namespace:MVVMNext.Controls;assembly=MVVMNext.Controls"
         xmlns:local="clr-namespace:MVVMNext.Sample" WindowStyle="None"
+        xmlns:si="clr-namespace:SVGImage.SVG;assembly=DotNetProjects.SVGImage"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -14,8 +15,14 @@
         </Grid.RowDefinitions>
         <MVNCtrls:DropBorder Grid.Row="0" Background="SteelBlue">
             <MVNCtrls:StateButtons HorizontalAlignment="Right"/>
-            
+
         </MVNCtrls:DropBorder>
-        
+        <StackPanel Grid.Row="1">
+            <si:SVGImage x:Name="svgimg" OverrideColor="red"
+            MinWidth="32" MinHeight="32" Margin="2" UseAnimations="True"
+            Source="/MVVMNext.Controls;component/svg/move.svg" />
+            <Button Click="Button_Click">change color</Button>
+            <MVNCtrls:SVGButton BaseColor="Green" Source="/MVVMNext.Controls;component/svg/move.svg" Height="32" OverColor="Red"/>
+        </StackPanel>
     </Grid>
 </Window>
