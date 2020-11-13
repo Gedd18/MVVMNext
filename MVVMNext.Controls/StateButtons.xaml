@@ -6,14 +6,24 @@
              xmlns:lcl="clr-namespace:MVVMNext.Controls"
              xmlns:svg="clr-namespace:SVGImage.SVG;assembly=DotNetProjects.SVGImage"
              mc:Ignorable="d"  Loaded="UserControl_Loaded"
-             d:DesignHeight="50" d:DesignWidth="150">
+             d:DesignHeight="50" d:DesignWidth="150" x:Name="parent" Background="Transparent">
     <StackPanel Orientation="Horizontal">
-        <lcl:CommandPanel x:Name="MinimizeButton" MinWidth="32" Background="Transparent">
-            <svg:SVGImage Grid.Row="1" Width="24" Height="24" Source="/MVVMNext.Controls;component/svg/move.svg"  OverrideColor="Aqua" OverrideStrokeWidth="2" >
+        <lcl:SVGButton x:Name="MinimizeButton" MinWidth="32" MinHeight="32" Width="24" Height="24" 
+                       Padding="3"                       
+                       Source="/MVVMNext.Controls;component/svg/minimize.svg" 
+                       BaseColor="WhiteSmoke"
+                       OverColor="Red"/>
 
-            </svg:SVGImage>
-        </lcl:CommandPanel>
-        <Button Background="Blue" MinWidth="32" Click="Click_Maximize" />
-        <Button Background="Red" MinWidth="32" Click="Click_Close" />
+        <lcl:SVGButton x:Name="MaximizeButton" MinWidth="32" MinHeight="32" Width="24" Height="24" 
+                       Padding="3"                       
+                       Source="/MVVMNext.Controls;component/svg/move.svg" 
+                       BaseColor="WhiteSmoke"
+                       OverColor="Red"/>
+
+        <lcl:SVGButton x:Name="CloseButton" MinWidth="32" MinHeight="32" Width="24" Height="24" 
+                       Padding="5"                       
+                       Source="/MVVMNext.Controls;component/svg/close-line.svg"
+                       BaseColor="WhiteSmoke"
+                       OverColor="Red"/>
     </StackPanel>
 </Border>

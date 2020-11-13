@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Drawing;
+using System.Windows;
 using System.Windows.Controls;
 using MvvmNext.Command;
 
@@ -9,11 +10,27 @@ namespace MVVMNext.Controls
     /// </summary>
     public partial class StateButtons : Border
     {
+        public static readonly DependencyProperty BaseColorProperty =
+        DependencyProperty.Register(
+            "BaseColor",
+            typeof(Color),
+            typeof(StateButtons),
+            new PropertyMetadata(Color.White));
+
+        public Color BaseColor
+        {
+            get { return (Color)GetValue(BaseColorProperty); }
+            set { SetValue(BaseColorProperty, value); }
+        }
+
+
         private Window _parentWindow;
         public StateButtons()
         {
             InitializeComponent();
             MinimizeButton.Command = new RelayCommand<object>((o) => Click_Minimize()) ;
+            MaximizeButton.Command = new RelayCommand<object>((o) => Click_Maximize());
+            CloseButton.Command = new RelayCommand<object>((o) => Click_Close());
         }
 
         private void Click_Minimize()
@@ -25,7 +42,7 @@ namespace MVVMNext.Controls
         }
             
 
-        private void Click_Maximize(object sender, RoutedEventArgs e)
+        private void Click_Maximize()
         {
             if (_parentWindow != null)
             {
@@ -45,7 +62,7 @@ namespace MVVMNext.Controls
             }
         }
 
-        private void Click_Close(object sender, RoutedEventArgs e)
+        private void Click_Close()
         {
             _parentWindow?.Close();
         }
