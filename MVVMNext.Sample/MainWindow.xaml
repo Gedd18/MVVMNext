@@ -19,7 +19,7 @@
         
         <StackPanel Grid.Row="1">
             <MVNCtrls:SVGButton 
-                BaseColor="Green" 
+                BaseColor="Green" OverBackgroundColor="Gray"
                 Source="/MVVMNext.Sample;component/svg/happy.svg"
                 Height="32" Width="32" 
                 OverColor="Red"

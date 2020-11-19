@@ -1,20 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Resources;
-using System.Windows.Shapes;
 
 namespace MVVMNext.Controls
 {
@@ -60,6 +49,12 @@ namespace MVVMNext.Controls
             set;
         }
 
+        public Color? OverBackgroundColor
+        { 
+            get; 
+            set; 
+        }
+
         public SVGButton()
         {
             InitializeComponent();
@@ -70,12 +65,15 @@ namespace MVVMNext.Controls
         private void SVGButton_MouseLeave(object sender, MouseEventArgs e)
         {
             img.OverrideColor = _baseColor;
+            img.Background = Brushes.Transparent;
             Update();
         }
 
         private void SVGButton_MouseEnter(object sender, MouseEventArgs e)
         {
             if (OverColor != null) img.OverrideColor = OverColor;
+            if (OverBackgroundColor != null)
+                img.Background = new SolidColorBrush(OverBackgroundColor.GetValueOrDefault());
             Update();
         }
 
