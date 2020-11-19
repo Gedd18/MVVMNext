@@ -50,11 +50,13 @@ namespace MVVMNext.Controls
                 {
                     case WindowState.Normal:
                         _parentWindow.WindowState = WindowState.Maximized;
+                        MaximizeButton.Source = "/MVVMNext.Controls;component/svg/restore.svg";
                         break;
                     case WindowState.Minimized:
                         break;
                     case WindowState.Maximized:
                         _parentWindow.WindowState = WindowState.Normal;
+                        MaximizeButton.Source = "/MVVMNext.Controls;component/svg/square.svg";
                         break;
                     default:
                         break;
