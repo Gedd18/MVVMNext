@@ -17,11 +17,12 @@
             <MVNCtrls:StateButtons HorizontalAlignment="Right"/>
         </MVNCtrls:DropBorder>
         
-        <StackPanel Grid.Row="1">
-            <MVNCtrls:SVGButton 
+        <StackPanel Grid.Row="1" Margin="5">
+            <MVNCtrls:SVGButton Padding="2"
                 BaseColor="Green" OverBackgroundColor="Gray"
                 Source="/MVVMNext.Sample;component/svg/happy.svg"
-                Height="32" Width="32" 
+                Height="64" Width="64" 
+                CornerRadius="3"
                 OverColor="Red"
                 Command="{Binding mycommand}"
                 Parameter="{Binding myparameter}"/>

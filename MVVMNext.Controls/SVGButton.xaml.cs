@@ -65,7 +65,7 @@ namespace MVVMNext.Controls
         private void SVGButton_MouseLeave(object sender, MouseEventArgs e)
         {
             img.OverrideColor = _baseColor;
-            img.Background = Brushes.Transparent;
+            Background = Brushes.Transparent;
             Update();
         }
 
@@ -73,7 +73,7 @@ namespace MVVMNext.Controls
         {
             if (OverColor != null) img.OverrideColor = OverColor;
             if (OverBackgroundColor != null)
-                img.Background = new SolidColorBrush(OverBackgroundColor.GetValueOrDefault());
+                Background = new SolidColorBrush(OverBackgroundColor.GetValueOrDefault());
             Update();
         }
 

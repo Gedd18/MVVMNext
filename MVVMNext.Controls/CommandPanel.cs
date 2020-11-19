@@ -6,7 +6,7 @@ using System.Windows.Input;
 
 namespace MVVMNext.Controls
 {
-    public class CommandPanel : UserControl
+    public class CommandPanel : Border
     {
         
         public static readonly DependencyProperty CommandProperty =
