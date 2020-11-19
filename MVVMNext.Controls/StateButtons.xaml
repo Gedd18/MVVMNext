@@ -8,20 +8,20 @@
              mc:Ignorable="d"  Loaded="UserControl_Loaded"
              d:DesignHeight="50" d:DesignWidth="150" x:Name="parent" Background="Transparent">
     <StackPanel Orientation="Horizontal">
-        <lcl:SVGButton x:Name="MinimizeButton" MinWidth="32" MinHeight="32" Width="24" Height="24" 
-                       Padding="3"                       
-                       Source="/MVVMNext.Controls;component/svg/minimize.svg" 
+        <lcl:SVGButton x:Name="MinimizeButton" Width="24" Height="24" 
+                       Padding="5" VerticalAlignment="Bottom"                  
+                       Source="/MVVMNext.Controls;component/svg/minus.svg" 
                        BaseColor="WhiteSmoke"
                        OverColor="Red"/>
 
-        <lcl:SVGButton x:Name="MaximizeButton" MinWidth="32" MinHeight="32" Width="24" Height="24" 
-                       Padding="3"                       
-                       Source="/MVVMNext.Controls;component/svg/move.svg" 
-                       BaseColor="WhiteSmoke"
-                       OverColor="Red"/>
-
-        <lcl:SVGButton x:Name="CloseButton" MinWidth="32" MinHeight="32" Width="24" Height="24" 
+        <lcl:SVGButton x:Name="MaximizeButton" Width="24" Height="24" 
                        Padding="5"                       
+                       Source="/MVVMNext.Controls;component/svg/restore.svg" 
+                       BaseColor="WhiteSmoke"
+                       OverColor="Red"/>
+
+        <lcl:SVGButton x:Name="CloseButton" Width="24" Height="24" 
+                       Padding="5"
                        Source="/MVVMNext.Controls;component/svg/close-line.svg"
                        BaseColor="WhiteSmoke"
                        OverColor="Red"/>

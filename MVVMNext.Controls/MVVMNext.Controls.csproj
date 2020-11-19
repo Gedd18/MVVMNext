@@ -12,6 +12,10 @@
 		<RepositoryUrl>https://github.com/gedd18/MVVMNext</RepositoryUrl>
 	</PropertyGroup>
 	<ItemGroup>
+	  <None Remove="svg\minus.svg" />
+	  <None Remove="svg\restore.svg" />
+	</ItemGroup>
+	<ItemGroup>
 	  <PackageReference Include="DotNetProjects.SVGImage" Version="4.1.86" />
 	</ItemGroup>
 	<ItemGroup>
@@ -19,11 +23,7 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Resource Include="svg\close-line.svg" />
-	  <Resource Include="svg\math-minus.svg" />
-	  <Resource Include="svg\minimize.svg" />
-	  <Resource Include="svg\move-thin.svg" />
-	  <Resource Include="svg\move.svg" />
-	  <Resource Include="svg\restore-window-line.svg" />
-	  <Resource Include="svg\restore-window.svg" />
+	  <Resource Include="svg\minus.svg" />
+	  <Resource Include="svg\restore.svg" />
 	</ItemGroup>
 </Project>
