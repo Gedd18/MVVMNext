@@ -9,7 +9,7 @@
              d:DesignHeight="50" d:DesignWidth="150" x:Name="parent" Background="Transparent">
     <StackPanel Orientation="Horizontal">
         <lcl:SVGButton x:Name="MinimizeButton" Width="24" Height="24" 
-                       Padding="5" VerticalAlignment="Bottom"                  
+                       Padding="5"             
                        Source="/MVVMNext.Controls;component/svg/minus.svg" 
                        BaseColor="WhiteSmoke"
                        OverColor="Red"/>
