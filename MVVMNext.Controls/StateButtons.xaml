@@ -22,7 +22,7 @@
 
         <lcl:SVGButton x:Name="CloseButton" Width="24" Height="24" 
                        Padding="5"
-                       Source="/MVVMNext.Controls;component/svg/close-line.svg"
+                       Source="/MVVMNext.Controls;component/svg/close.svg"
                        BaseColor="WhiteSmoke"
                        OverColor="Red"/>
     </StackPanel>

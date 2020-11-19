@@ -12,6 +12,7 @@
 		<RepositoryUrl>https://github.com/gedd18/MVVMNext</RepositoryUrl>
 	</PropertyGroup>
 	<ItemGroup>
+	  <None Remove="svg\close.svg" />
 	  <None Remove="svg\minus.svg" />
 	  <None Remove="svg\restore.svg" />
 	  <None Remove="svg\square.svg" />
@@ -23,7 +24,7 @@
 	  <ProjectReference Include="..\MVVMNext\MVVMNext.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Resource Include="svg\close-line.svg" />
+	  <Resource Include="svg\close.svg" />
 	  <Resource Include="svg\minus.svg" />
 	  <Resource Include="svg\restore.svg" />
 	  <Resource Include="svg\square.svg" />
