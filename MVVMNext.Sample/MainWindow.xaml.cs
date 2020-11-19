@@ -15,21 +15,5 @@ namespace MVVMNext.Sample
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            svgimg.OverrideColor = (svgimg.OverrideColor==Colors.Red)?Colors.BlueViolet:Colors.Red;
-
-            //svgimg.Source = "/MVVMNext.Controls;component/svg/restore-window.svg";
-
-            StreamResourceInfo sri = Application.GetResourceStream(new Uri("pack://application:,,," + svgimg.Source));
-
-            using (Stream s = sri.Stream)
-            {
-                svgimg.SetImage(s);
-            }
-            //svgimg.InvalidateVisual();
-            //svgimg.ReRenderSvg();
-        }
     }
 }

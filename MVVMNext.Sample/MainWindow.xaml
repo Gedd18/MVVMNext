@@ -15,14 +15,16 @@
         </Grid.RowDefinitions>
         <MVNCtrls:DropBorder Grid.Row="0" Background="SteelBlue">
             <MVNCtrls:StateButtons HorizontalAlignment="Right"/>
-
         </MVNCtrls:DropBorder>
+        
         <StackPanel Grid.Row="1">
-            <si:SVGImage x:Name="svgimg" OverrideColor="red"
-            MinWidth="32" MinHeight="32" Margin="2" UseAnimations="True"
-            Source="/MVVMNext.Controls;component/svg/move.svg" />
-            <Button Click="Button_Click">change color</Button>
-            <MVNCtrls:SVGButton BaseColor="Green" Source="/MVVMNext.Controls;component/svg/move.svg" Height="32" OverColor="Red"/>
+            <MVNCtrls:SVGButton 
+                BaseColor="Green" 
+                Source="/MVVMNext.Sample;component/svg/happy.svg"
+                Height="32" Width="32" 
+                OverColor="Red"
+                Command="{Binding mycommand}"
+                Parameter="{Binding myparameter}"/>
         </StackPanel>
     </Grid>
 </Window>

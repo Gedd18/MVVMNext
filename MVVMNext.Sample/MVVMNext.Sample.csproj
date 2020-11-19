@@ -12,7 +12,13 @@
 		<RepositoryUrl>https://github.com/gedd18/MVVMNext</RepositoryUrl>
 		<OutputType>WinExe</OutputType>
 	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="svg\happy.svg" />
+	</ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MVVMNext.Controls\MVVMNext.Controls.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="svg\happy.svg" />
   </ItemGroup>
 </Project>
