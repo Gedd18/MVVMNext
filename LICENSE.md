@@ -1,7 +1,7 @@
 MIT License
 
 Copyright (c) 2009 - 2018 Laurent Bugnion
-Copyright (c) 2020 Gedd18
+Copyright (c) 2020 Guillaume Delestic
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

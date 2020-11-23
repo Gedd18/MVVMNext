@@ -11,11 +11,30 @@
 		<Company>GitHub</Company>
 		<PackageDescription>MVVMNext</PackageDescription>
 		<RepositoryUrl>https://github.com/gedd18/MVVMNext</RepositoryUrl>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<Copyright>Gedd18</Copyright>
+		<Description>A rewrite of MVVM Light for new .Net version</Description>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommonServiceLocator" Version="2.0.5" />
 		<PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.19" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="../../LICENSE.md">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
+	  <None Include="../LICENSE.md">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
+	  <None Include="..\..\LICENSE.md">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>

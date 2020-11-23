@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVMNext", "MVVMNext\MVVMNext.csproj", "{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Debug|x64.Build.0 = Debug|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Debug|x86.Build.0 = Debug|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Release|x64.ActiveCfg = Release|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Release|x64.Build.0 = Release|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Release|x86.ActiveCfg = Release|Any CPU
+		{DF4D9E95-2559-45BB-9297-FBF5F6FC56BA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B13C9929-754C-4FE9-B227-215401396897}
+	EndGlobalSection
+EndGlobal
