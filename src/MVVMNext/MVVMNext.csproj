@@ -13,7 +13,7 @@
 		<RepositoryUrl>https://github.com/gedd18/MVVMNext</RepositoryUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-		<Copyright>Gedd18</Copyright>
+		<Copyright>2020 Gedd18</Copyright>
 		<Description>MVVM Light rewrite to support recent Net platforms.</Description>
 	</PropertyGroup>
 
