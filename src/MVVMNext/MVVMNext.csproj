@@ -14,7 +14,7 @@
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 		<Copyright>Gedd18</Copyright>
-		<Description>A rewrite of MVVM Light for new .Net version</Description>
+		<Description>MVVM Light rewrite to support recent Net platforms.</Description>
 	</PropertyGroup>
 
 	<ItemGroup>
